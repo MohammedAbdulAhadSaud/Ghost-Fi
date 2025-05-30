@@ -12,7 +12,7 @@
 
 It is designed for **penetration testers**, **security researchers**, and **ethical hackers** who want to audit the security of their own wireless networks.
 
----
+Performs a brute-force attack on Wi-Fi without requiring a Wi-Fi adapter..
 
 ## Features
 
