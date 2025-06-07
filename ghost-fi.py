@@ -179,7 +179,7 @@ def connect_with_profile(ssid, bssid,path="/usr/share/wordlists/rockyou.txt"):
 			continue
 
 		except subprocess.TimeoutExpired:
-			print( FORE.LIGHTYELLOW_EX+ f"=>  Connection attempt timed out after 20 seconds.")
+			print( Fore.LIGHTYELLOW_EX+ f"=>  Connection attempt timed out after 20 seconds.")
 			continue
 
 		except Exception as e:
