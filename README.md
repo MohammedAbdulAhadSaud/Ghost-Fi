@@ -33,18 +33,6 @@ Performs a brute-force attack on Wi-Fi without requiring a Wi-Fi adapter..
 
 ---
 
-### Required Python Packages:
-
-- `colorama`
-- `pyfiglet`
-
-### Install dependencies:
-
-```bash
-pip install colorama pyfiglet
-
-```
-
 ### Ensure `nmcli` is installed:
 - if not :
 ```bash
@@ -56,14 +44,8 @@ sudo apt install network-manager
 ```bash
 git clone https://github.com/MohammedAbdulAhadSaud/Ghost-Fi.git
 cd Ghost-Fi
-```
-## Create a virtual environment:
-```bash
-python -m venv .pymodule
-source .pymodule/bin/activate
-pip install colorama pyfiglet
 chmod +x ghost-fi.py
-sudo .pymodule/bin/python ghost-fi.py
+sudo python ghost-fi.py
 ```
 ## Do not use sudo python ghost-fi.py inside the virtual environment,as it uses the system Python which may not have the required packages.
 
