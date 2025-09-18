@@ -4,7 +4,7 @@ import time
 import os 
 import sys
 from colorama import *
-from pyfiglet import Figlet
+
 
 #Checks if a Wi-Fi network with the given SSID  Entered SSID and BSSID  available using nmcli.
 
@@ -198,10 +198,16 @@ if __name__ == "__main__":
 		print( Fore.RED+"\n=> This script must be run as root. Please use 'sudo'."+Style.RESET_ALL)
 		sys.exit(1)
 
-	figlet = Figlet(font='slant')
-	ascii_art = figlet.renderText('\n      GHOST-FI       ')
-	print(Fore.LIGHTRED_EX + ascii_art + Style.RESET_ALL)
-	print(Fore.LIGHTCYAN_EX +"\n"*5+ " " *40+  "Created by: MohammedAbdulAhadSaud\n"+ Style.RESET_ALL)
+	init(autoreset=True)
+	ascii_art = r"""
+		  ______ _     _  _____  _______ _______     _______ _____
+		 |  ____ |_____| |     | |______    |    ___ |______   |  
+		 |_____| |     | |_____| ______|    |        |       __|__
+                                                          
+"""
+
+	print(Fore.LIGHTRED_EX + "\n"*2+ascii_art + Style.RESET_ALL)
+	print(Fore.LIGHTCYAN_EX +"\n"*2+ " " *40+  "Created by: MohammedAbdulAhadSaud\n"+ Style.RESET_ALL)
 	print(Fore.LIGHTYELLOW_EX + " " * 40 + "GitHub: https://github.com/MohammedAbdulAhadSaud/Ghost-Fi\n" + Style.RESET_ALL)
 	
 
