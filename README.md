@@ -56,8 +56,17 @@ sudo apt install network-manager
 ```bash
 git clone https://github.com/MohammedAbdulAhadSaud/Ghost-Fi.git
 cd Ghost-Fi
-chmod +x ghost-fi.py
 ```
+## Create a virtual environment:
+```bash
+python -m venv .pymodule
+source .pymodule/bin/activate
+pip install colorama pyfiglet
+chmod +x ghost-fi.py
+sudo .pymodule/bin/python ghost-fi.py
+```
+## Do not use sudo python ghost-fi.py inside the virtual environment,as it uses the system Python which may not have the required packages.
+
 ### Must be run as root (using sudo); otherwise, the NetworkManager Connection Editor GUI will repeatedly pop up after every password attempt.
 ---
 ## ⚖️ Disclaimer / Ethical Use
